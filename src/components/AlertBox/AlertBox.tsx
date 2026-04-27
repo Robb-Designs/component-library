@@ -12,11 +12,11 @@ export const AlertBox: React.FC<AlertBoxProps> = ({
   // Map each alert type to a set of Tailwind styles.
   // using the current "type" prop later to pick the right style.
   const alertStyles = {
-    success: 'bg-green-100 border-green-500 text-green-700',
-    error: 'bg-red-100 border-red-500 text-red-700',
-    warning: 'bg-yellow-100 border-yellow-500 text-yellow-700',
-    info: 'bg-blue-100 border-blue-500 text-blue-700'
-  };
+  success: 'bg-green-50 border-l-4 border-green-500 text-green-800 rounded-r-lg',
+  error:   'bg-red-50 border-l-4 border-red-500 text-red-800 rounded-r-lg',
+  warning: 'bg-yellow-50 border-l-4 border-yellow-500 text-yellow-800 rounded-r-lg',
+  info:    'bg-blue-50 border-l-4 border-blue-500 text-blue-800 rounded-r-lg',
+};
  
   return (
     // Apply shared layout classes plus the style selected by alert type.
