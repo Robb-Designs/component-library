@@ -100,3 +100,36 @@ import { UserProfileCard } from "./components/UserProfileCard/UserProfileCard";
     onEdit={(userId) => alert(`Edit user with ID: ${userId}`)}
 />;
 ```
+
+
+### 3) ProductDisplay
+
+Shows product details with configurable description/stock visibility and optional add-to-cart action.
+
+Props:
+- `product`: Product object (required)
+- `showDescription`: boolean (optional)
+- `showStockStatus`: boolean (optional)
+- `onAddToCart`: function receiving `productId` (optional)
+- `children`: ReactNode (optional)
+
+Example:
+
+```tsx
+import ProductDisplay from "./components/ProductDisplay/ProductDisplay";
+import headphonesImage from "./assets/headphones.jpg";
+
+<ProductDisplay
+    product={{
+        id: "1",
+        name: "Wireless Headphones",
+        description: "High-quality sound with comfortable all-day wear.",
+        price: 99.99,
+        inStock: true,
+        imageUrl: headphonesImage,
+    }}
+    showDescription={true}
+    showStockStatus={true}
+    onAddToCart={(productId) => alert(`Added product ${productId}`)}
+/>;
+```
