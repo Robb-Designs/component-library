@@ -2,7 +2,7 @@ import { UserProfileCard } from "./UserProfileCard";
 
 function UserProfileDisplay() {
   return (
-    <section>
+    <section className="mx-auto max-w-5xl px-4 py-6 md:px-6 flex flex-col md:flex-row md:w-[90%] gap-6">
         <UserProfileCard
                       user={{
                         id: "1",

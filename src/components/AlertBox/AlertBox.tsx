@@ -20,8 +20,11 @@ export const AlertBox: React.FC<AlertBoxProps> = ({
  
   return (
     // Apply shared layout classes plus the style selected by alert type.
-    <div className={`p-4 border-l-4 ${alertStyles[type]}`}>
-      <div className="flex justify-between items-center">
+    <div
+      className={`p-4 border-l-4 ${alertStyles[type]}`}
+      style={{ boxShadow: "var(--shadow)" }}
+    >
+      <div className="flex justify-between items-center " >
         {/* Main alert text from props */}
         <p>{message}</p>
         {/* Only show the close button if an onClose handler was provided */}

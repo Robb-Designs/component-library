@@ -11,7 +11,7 @@ function AlertBoxDisplay() {
       </header>
 
       <div className="grid gap-4 md:grid-cols-2 md:gap-5">
-        <article className="border border-(--border) relative overflow-hidden rounded-2xl bg-(--bg) p-5 shadow-[0_18px_40px_-28px_rgba(15,23,42,0.55)] ">
+        <article className="border border-(--border) relative overflow-visible rounded-2xl bg-(--bg) p-5 shadow-[0_18px_40px_-28px_rgba(15,23,42,0.55)] ">
           <span className="mb-3 inline-flex rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold tracking-wide text-emerald-800">
             Success
           </span>
@@ -26,7 +26,7 @@ function AlertBoxDisplay() {
           </AlertBox>
         </article>
 
-        <article className="border border-(--border) relative overflow-hidden rounded-2xl bg-(--bg) p-5 shadow-[0_18px_40px_-28px_rgba(15,23,42,0.55)] ">
+        <article className="border border-(--border) relative overflow-visible rounded-2xl bg-(--bg) p-5 shadow-[0_18px_40px_-28px_rgba(15,23,42,0.55)] ">
           <span className="mb-3 inline-flex rounded-full bg-rose-100 px-3 py-1 text-xs font-semibold tracking-wide text-rose-800">
             Error
           </span>
@@ -41,7 +41,7 @@ function AlertBoxDisplay() {
           </AlertBox>
         </article>
 
-        <article className="border border-(--border) relative overflow-hidden rounded-2xl bg-(--bg) p-5 shadow-[0_18px_40px_-28px_rgba(15,23,42,0.55)]">
+        <article className="border border-(--border) relative overflow-visible rounded-2xl bg-(--bg) p-5 shadow-[0_18px_40px_-28px_rgba(15,23,42,0.55)]">
           <span className="mb-3 inline-flex rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold tracking-wide text-amber-800">
             Warning
           </span>
@@ -56,7 +56,7 @@ function AlertBoxDisplay() {
           </AlertBox>
         </article>
 
-        <article className="border border-(--border) relative overflow-hidden rounded-2xl bg-(--bg) p-5 shadow-[0_18px_40px_-28px_rgba(15,23,42,0.55)]">
+        <article className="border border-(--border) relative overflow-visible rounded-2xl bg-(--bg) p-5 shadow-[0_18px_40px_-28px_rgba(15,23,42,0.55)]">
           <span className="mb-3 inline-flex rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold tracking-wide text-sky-800">
             Info
           </span>
