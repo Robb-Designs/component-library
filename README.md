@@ -133,3 +133,9 @@ import headphonesImage from "./assets/headphones.jpg";
     onAddToCart={(productId) => alert(`Added product ${productId}`)}
 />;
 ```
+
+## Future Ideas
+
+- Add unit tests for all component variants
+- Add Storybook for interactive documentation
+- Improve accessibility checks and keyboard interactions
