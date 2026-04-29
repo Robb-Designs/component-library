@@ -9,7 +9,7 @@ This project currently includes three reusable UI components:
 
 The app in development mode acts as a showcase page where you can preview component variants and experiment with props.
 
----
+
 
 ## Features
 
@@ -140,7 +140,25 @@ import headphonesImage from "./assets/headphones.jpg";
 - Add Storybook for interactive documentation
 - Improve accessibility checks and keyboard interactions
 
----
+### Copilot Integration
+
+I used Copilot throughout this project to help me debug styling issues, improve component structure, and make implementation fixes more efficiently. One example was when I was working on the `AlertBox` styling and noticed that the box shadow was not appearing correctly. With Copilot, I reviewed both the component and the parent layout and realized that the wrapper containers were clipping the shadow.
+
+```tsx
+<article className="border border-(--border) relative overflow-visible rounded-2xl bg-(--bg) p-5 shadow-[0_18px_40px_-28px_rgba(15,23,42,0.55)]">
+    <AlertBox
+        type="success"
+        message="Your profile has been updated successfully."
+        onClose={() => alert("Success alert closed")}
+    >
+        <p className="mt-2 text-sm leading-6 text-slate-700">
+            Everything was saved and synced. You can continue using the app.
+        </p>
+    </AlertBox>
+</article>
+```
+
+
 ## Reflection: My Thoughts
 
 This project helped me understand how to build reusable React components with clear TypeScript interfaces. I focused on making each component flexible without making it confusing. This has been my favorite project so far.
