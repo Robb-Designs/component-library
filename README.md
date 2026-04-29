@@ -9,6 +9,20 @@ This project currently includes three reusable UI components:
 
 The app in development mode acts as a showcase page where you can preview component variants and experiment with props.
 
+## Table of Contents
+
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Component Usage](#component-usage)
+    - [1) AlertBox](#1-alertbox)
+    - [2) UserProfileCard](#2-userprofilecard)
+    - [3) ProductDisplay](#3-productdisplay)
+- [Future Ideas](#future-ideas)
+- [Copilot Integration](#copilot-integration)
+- [Reflection: My Thoughts](#reflection-my-thoughts)
+    - [How did I handle optional props in my components?](#how-did-i-handle-optional-props-in-my-components)
+
 
 
 ## Features
