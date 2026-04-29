@@ -139,3 +139,20 @@ import headphonesImage from "./assets/headphones.jpg";
 - Add unit tests for all component variants
 - Add Storybook for interactive documentation
 - Improve accessibility checks and keyboard interactions
+
+---
+## Reflection: My Thoughts
+
+This project helped me understand how to build reusable React components with clear TypeScript interfaces. I focused on making each component flexible without making it confusing. This has been my favorite project so far.
+
+### How did I handle optional props in my components?
+
+I used optional props to let the same component work in multiple situations. For example, in `UserProfileCard` I made `showEmail`, `showRole`, and `onEdit` optional. That way I can show a full profile in one place and a minimal card in another.
+
+- If the prop exists or is true, render that UI.
+- If not, skip that part.
+
+I tried to keep interfaces:
+- Small
+- Easy to understand
+- Flexible enough for multiple UI variations
